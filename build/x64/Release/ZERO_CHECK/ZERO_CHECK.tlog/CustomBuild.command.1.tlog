@@ -1,0 +1,10 @@
+^C:\USERS\OLEGB\SE\SWORM_EVOLUTION\BUILD\CMAKEFILES\D18E1BC821287A458C7711ED3BD220C3\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/olegb/SE/sworm_evolution -BC:/Users/olegb/SE/sworm_evolution/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/olegb/SE/sworm_evolution/build/swormEvolution.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
